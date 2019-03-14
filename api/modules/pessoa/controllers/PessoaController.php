@@ -7,9 +7,8 @@ class PessoaController implements Crud{
   public function __constructor(){}
 
   public function create($request, $response){
-    
+    $result = array("status"=>"SUCCESS","message"=>"Operação realizada com sucesso!!!");
     try {
-	    $result = array("status"=>"SUCCESS","message"=>"Operação realizada com sucesso!!!");
 	  	$object = json_decode($request->getBody());
 	  	$pessoa = new Pessoa();
 
@@ -22,7 +21,7 @@ class PessoaController implements Crud{
 	      goto fim;
 	  	}
 	  	if(!isset($object->dt_aniversario) or $object->dt_aniversario==""){
-	      $result=array("status"=>"FAIL","message"=>"Aniversário não informado");
+	      $result=array("status"=>"FAIL","message"=>"AniversÃ¡rio não informado");
 	      goto fim;
 	  	}
 	  	if(!isset($object->telefones)){
@@ -46,7 +45,7 @@ class PessoaController implements Crud{
 	  	$pessoa->setDt_aniversario($object->dt_aniversario);
 	  	$pessoa->setTelefone($object->telefones);
 	  	if(!PessoaDao::create($pessoa))
-	      $result = array("status"=>"FAIL","message"=>"Erro ao Criar contato");    	
+	      $result = array("status"=>"FAIL","message"=>"Erro ao Cadastrar Pessoa");    	
     	
     } 
     catch (Exception $e) {

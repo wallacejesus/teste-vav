@@ -8,8 +8,9 @@
 	  ));
 	});
 
-	$app->notFound(function () use ($app) {
-	    echo json_encode(array("status"=>"error","message"=>"RequisiÃ§Ã£o nÃ£o definida!!!"));
-	});
+
 	require 'modules/pessoa/routes/pessoa-route.php';
+	$app->notFound(function () use ($app) {
+		echo json_encode(array("status"=>"FAIL","message"=>"Requisição não definida!!!"));
+  });	
 ?>
