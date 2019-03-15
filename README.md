@@ -35,7 +35,7 @@ Para utilizar o endpoint, após ter baixado o programa postman, basta importar o
             }
            ]
         }
-*2 - Atualizar Pessoa (http://wjapps.tk/vav/api/pessoa/update/:id_pessoa&ltstring&gt )* :id_pessoa(string)
+*2 - Atualizar Pessoa (http://wjapps.tk/vav/api/pessoa/update/:id_pessoa &ltstring&gt )* :id_pessoa(string)
 
     2.1 - Esta ação foi criada para executada via [PUT] usando os parâmetros abaixo:
     
