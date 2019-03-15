@@ -58,7 +58,17 @@ class PessoaController implements Crud{
     echo json_encode($result);
   }
 
-	public function findAll(){}
+	public function findAll(){
+		$result = array("status"=>"SUCCESS","message"=>"Operação realizada com sucesso!!!","pessoas"=>array());
+		try {
+			$result["pessoas"]=PessoaDao::findAll();
+		} catch (Exception $ex) {
+			$result = array("status"=>"FAIL","message"=>$ex->getMessage());
+			goto fim;
+		}
+		fim:
+		echo json_encode($result);
+	}
 	public function findOne($param){}
 	public function update($id){}
 	public function delete($id){} 

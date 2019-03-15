@@ -23,6 +23,23 @@ class PessoaDao extends Dao{
     }
   	return $result;
   }
+	public function findAll(){
+		$result=null;
+    try { 
 
+	    $conn = self::open();
+	    $vav_bd = $conn->vav_bd;
+	    $pessoasCollection = $vav_bd->pessoas;
+
+	    $result = iterator_to_array($pessoasCollection->find()); 
+	       	
+    } 
+    catch (Exception $ex) {
+    	throw new Exception("Não foi possível consultar a coleção de pessoas. Erro:".$ex->getMessage(), 1);
+			
+    }
+  	return $result;
+	}
+	
 }
 ?>
