@@ -1,7 +1,9 @@
 # teste-vav
 Teste para processo seletivo da VAV Audio Visual
 
-Para o endpoint foi criado gerado o arquivo <vav_endpoint.json>, que poderá ser utilizado com programa postman que pode ser baixado no link https://www.getpostman.com/downloads/. 
+Para o endpoint foi criado gerado o arquivo (vav_endpoint.json), que poderá ser utilizado com programa postman que pode ser baixado no link https://www.getpostman.com/downloads/. 
+
+Para utilizar o endpoint, após ter baixado o programa postman, basta importar o arquivo (vav_endpoint.json).
 
 # URL da API
   
