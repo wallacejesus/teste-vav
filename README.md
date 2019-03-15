@@ -35,7 +35,7 @@ Para utilizar o endpoint, após ter baixado o programa postman, basta importar o
             }
            ]
         }
-*2 - Atualizar Pessoa (http://wjapps.tk/vav/api/pessoa/update/:id_pessoa<string>)*
+*2 - Atualizar Pessoa (http://wjapps.tk/vav/api/pessoa/update/:id_pessoa <string>)*
 
     2.1 - Esta ação foi criada para executada via [PUT] usando os parâmetros abaixo:
     
@@ -64,11 +64,11 @@ Para utilizar o endpoint, após ter baixado o programa postman, basta importar o
     3.1 - Esta ação foi criada para executada via [GET]
     
 
-*4 - Listar por nome (http://wjapps.tk/vav/api/pessoa/findOne/:nome<string>)*
+*4 - Listar por nome (http://wjapps.tk/vav/api/pessoa/findOne/:nome <string>)*
 
     4.1 - Esta ação foi criada para executada via [GET]    
     
 
-*5 - Deletar Pessoas (http://wjapps.tk/vav/api/pessoa/delete/:id_pessoa<string>)*
+*5 - Deletar Pessoas (http://wjapps.tk/vav/api/pessoa/delete/:id_pessoa <string>)*
 
     5.1 - Esta ação foi criada para executada via [DELETE]        
