@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "84ce77a3-8775-4f7a-abee-6d053058555b",
+		"name": "API VAV",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Criar Pessoa",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"Wallace1\",\n\t\"sobrenome\":\"Jesus\",\n\t\"dt_aniversario\":\"17/06\",\n\t\"telefones\":[\n\t  {\n\t    \"numero\":\"21 335888988\",\n\t    \"tipo\":\"Casa\"\n\t  },\n\t  {\n\t  \t\"numero\":\"21 99887878\",\n\t  \t\"tipo\":\"Celular\"\n\t  }\n\t ]\n}\n"
+				},
+				"url": {
+					"raw": "http://wjapps.tk/vav/api/pessoa/create",
+					"protocol": "http",
+					"host": [
+						"wjapps",
+						"tk"
+					],
+					"path": [
+						"vav",
+						"api",
+						"pessoa",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Pessoa",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"Wallace 78\",\n\t\"sobrenome\":\"Jesus da silva\",\n\t\"dt_aniversario\":\"17/12\",\n\t\"telefones\":[\n\t  {\n\t    \"numero\":\"21 335888988\",\n\t    \"tipo\":\"Casa\"\n\t  },\n\t  {\n\t  \t\"numero\":\"21 99887878\",\n\t  \t\"tipo\":\"Celular\"\n\t  }\n\t ]\n}\n"
+				},
+				"url": {
+					"raw": "http://wjapps.tk/vav/api/pessoa/update/5c8be298c013aa0210000432",
+					"protocol": "http",
+					"host": [
+						"wjapps",
+						"tk"
+					],
+					"path": [
+						"vav",
+						"api",
+						"pessoa",
+						"update",
+						"5c8be298c013aa0210000432"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Pessoas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"Wallace\",\n\t\"sobrenome\":\"Jesus\",\n\t\"dt_aniversario\":\"17/06\",\n\t\"telefones\":[\n\t  {\n\t    \"numero\":\"21 335888988\",\n\t    \"tipo\":\"Casa\"\n\t  },\n\t  {\n\t  \t\"numero\":\"21 99887878\",\n\t  \t\"tipo\":\"Celular\"\n\t  }\n\t ]\n}\n"
+				},
+				"url": {
+					"raw": "http://wjapps.tk/vav/api/pessoa/findAll",
+					"protocol": "http",
+					"host": [
+						"wjapps",
+						"tk"
+					],
+					"path": [
+						"vav",
+						"api",
+						"pessoa",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar por nome",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"Wallace\",\n\t\"sobrenome\":\"Jesus\",\n\t\"dt_aniversario\":\"17/06\",\n\t\"telefones\":[\n\t  {\n\t    \"numero\":\"21 335888988\",\n\t    \"tipo\":\"Casa\"\n\t  },\n\t  {\n\t  \t\"numero\":\"21 99887878\",\n\t  \t\"tipo\":\"Celular\"\n\t  }\n\t ]\n}\n"
+				},
+				"url": {
+					"raw": "http://wjapps.tk/vav/api/pessoa/findOne/wallace",
+					"protocol": "http",
+					"host": [
+						"wjapps",
+						"tk"
+					],
+					"path": [
+						"vav",
+						"api",
+						"pessoa",
+						"findOne",
+						"wallace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Pessoa",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://wjapps.tk/vav/api/pessoa/delete/5c8af4c9c013aa02100003fa",
+					"protocol": "http",
+					"host": [
+						"wjapps",
+						"tk"
+					],
+					"path": [
+						"vav",
+						"api",
+						"pessoa",
+						"delete",
+						"5c8af4c9c013aa02100003fa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
