@@ -16,7 +16,7 @@ class PessoaDao extends Dao{
 	      "dt_aniversario"=>$pessoa->getDt_aniversario(),
 	      "telefones"=>$pessoa->getTelefone()
 	   );
-	   $pessoasCollection->insertMany(array($document));    	
+	   $pessoasCollection->insertOne($document);    	
     } 
     catch (Exception $e) {
     	$result = false;
